@@ -4,6 +4,7 @@ import sqlite3
 import datetime
 import plotly.express as px
 
+st.set_page_config(page_title="Pet & Kuafor", layout="centered") # 'wide' yerine 'centered' mobilde daha iyi durur
 # --- AYARLAR VE VERİTABANI BAĞLANTISI ---
 st.set_page_config(page_title="PAWCO Mağaza Yönetim Paneli", layout="wide", initial_sidebar_state="expanded")
 
@@ -357,3 +358,4 @@ elif st.session_state.sayfa == 'Ayarlar':
                 st.rerun()
             except Exception as e:
                 st.error(f"Hata oluştu: {e}")
+
